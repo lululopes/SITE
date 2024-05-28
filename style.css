@@ -1,0 +1,284 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- estilo do corpo --- */
+body {
+    text-align: center;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    background-image: linear-gradient(to left, rgb(192, 169, 255), #98ffe5);
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+header {
+    background-image: linear-gradient(to right, #11c3e2, #4b0d9c);
+    padding: 30px;
+}
+
+
+
+#menu { /* --- MENU/LINK SOLIDARIEDADE --- */
+
+    a {
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+    a:link, a:visited {
+        color: white;
+        padding: 8px 40px;    
+        border-radius: 5px;
+    }
+
+    a:hover {
+        color: white;
+        background-image: linear-gradient(to top, #96edf0, #5c5656 );
+        color: black;
+    }
+}
+
+
+h1 {
+    color: white;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+span {
+    /*color: #11c3e2;*/
+    background: linear-gradient(to right, #11c3e2, rgb(44, 1, 25));
+    background-clip: text;
+    color: transparent;
+}
+
+/* --- estilização de todos os p --- */
+p { 
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    background-image: linear-gradient(to left, #680aff, #745574);
+    font-family:  Verdana, sans-serif;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+/* --- paragráfo do container - página DÚVIDAS --- */
+#pduvidas {
+    background-image: linear-gradient(to top, #decbfc, #e5e7e7);
+    border-radius: 2em;
+}
+
+/* --- página início --- */
+#container {
+    padding-top: 20px;
+    width: 920px;
+}
+
+/* --- página campanha --- */
+.container.pg2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    width: 920px;
+}
+
+/* --- página dúvidas e contato --- */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- h2 dentro do container das páginas dúvidas e contato --- */
+.textos h2 {
+    color: #4b0d9c;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* --- botão saiba mais --- */
+.button  {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b0d9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #11c3e2;
+}
+/* --- pág CONTATO - formulário de contato --- */
+.contato-formu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-formu label {
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+}
+
+.contato-formu input,
+.contato-formu textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contato-formu button {
+    padding: 10px 20px;
+    background-color: #4b0d9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.contato-formu button:hover {
+    background-color: #11c3e2;
+}
+/* --- mensagem com javascript --- */
+.mensagem {
+    display: none;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 20px;
+}
+
+/* --- seção de textos --- */
+#textos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+/* --- palavra DIVULGUE na pág campanha --- */
+#coloridin {
+    background-image: linear-gradient(to bottom, #1dc6fa, #ffebef);
+}
+
+/* --- rodapé --- */
+footer {
+    color: white;
+    background-image: linear-gradient(to right, #11c3e2, rgb(44, 1, 25));
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* --- imagens e blocos de imagens pág CAMPANHA --- */
+#bloco, #bloco2, #bloco3, #bloco4 {
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 20px;
+    position: relative;
+}
+
+#img0 {
+    box-shadow: px 5px 15px;
+    padding-left: 40px;
+    transition: 0.5s;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding-left: 40px;
+}
+
+#img0:hover {
+    transform: scale(1.1); /* aumenta a imagem em 10% */
+    border-color: black; /* muda a cor da bord p/ pretin */
+    transform: rotate(1seg);
+}
+
+
+.imagem1 {
+    margin-right: calc(45% - 100px);
+    position: relative;
+}  
+
+.imagemv1 {
+    margin-left: calc(45% - 100px);
+    position: relative;
+}
+
+.imagem2 {
+    margin-right: calc(30% - 100px);
+    position: relative;
+}
+
+.imagemv2 {
+    margin-left: calc(30% - 100px);
+    position: relative;
+}
+
+.imagem3 {
+    position: relative;
+    margin-right: calc(30% - 100px); 
+}
+
+.imagemv3 {
+    position: relative;
+    margin-left: calc(30% - 100px); 
+}
+
+.imagem4 {
+    margin-right: calc(8% - 100px);
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.imagem1 img,
+.imagem2 img,
+.imagem3 img,
+.imagem4 img,
+.imagemv1 img,
+.imagemv2 img,
+.imagemv3 img  {
+    background-color: #122433;
+    box-shadow: 5px 5px 15px;
+    border-radius: 10px;
+    padding-left: 40px;
+    transition: 0.5s;
+    height: 45%;
+    min-height: 270px;
+    max-width: 600px;
+    width: 30%;
+}
+
+.imagem1 img:hover,
+.imagem2 img:hover,
+.imagem3 img:hover,
+.imagem4 img:hover,
+.imagemv1 img:hover,
+.imagemv2 img:hover,
+.imagemv3 img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+    border-color: black; /* Muda a cor da borda para preto */
+    transform: rotate(1seg);
+}
